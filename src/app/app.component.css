@@ -1,0 +1,8 @@
+:host {
+	display: flex;
+	justify-content: flex-start;
+}
+
+map {
+	margin-right: 20px;
+}

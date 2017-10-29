@@ -1,0 +1,19 @@
+<label for="point-name">Point name</label>
+<input [(ngModel)]="nameCircle" type="text" id="point-name"><br>
+<label for="point-radius">Radius</label>
+<input [(ngModel)]="radius" type="range" min="50" max="100" id="point-radius"><br>
+<input [(ngModel)]="shipsData.redShips" id="red-ships" type="number" min="0" max="100"><div class="red icon"></div>
+	<span class="maxValue">Max value: {{maxValue}}</span><br>
+<input [(ngModel)]="shipsData.greenShips" id="green-ships" type="number" min="0" max="100"><div class="green icon"></div>
+	<span class="maxValue">Max value: {{maxValue}}</span><br>
+<input [(ngModel)]="shipsData.blueShips" id="blue-ships" type="number" min="0" max="100"><div class="blue icon"></div>
+	<span class="maxValue">Max value: {{maxValue}}</span><br>
+<button (click)='addCircle()' id="add-circle">{{btnText}}</button><br>
+
+<div id="ship-path-wrap" class="checkbox-wrap"><input type="checkbox" id="ship-path" checked="checked"><label for="ship-path">Show ship path</label></div><br>
+<div id="cities-wrap" class="checkbox-wrap"><input type="checkbox" id="cities" checked="checked"><label for="cities">Show cities</label></div><br>
+<div id="countries-wrap" class="checkbox-wrap"><input type="checkbox" id="countries" checked="checked"><label for="countries">Show countries</label></div><br>
+<label for="ship-speed">Ship speed</label><input type="range" id="ship-speed" min="10" max="60"><br>
+<button (click)="changeShipPath()" id="change-path">Change Path</button>
+<!--<button (click)="hidePoints()" id="hide-points">Hide Points</button>-->
+<button (click)="deleteAllPoints()" id="delete-points">Delete All Points</button>
